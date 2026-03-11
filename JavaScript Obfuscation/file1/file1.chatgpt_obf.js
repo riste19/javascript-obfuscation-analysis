@@ -1,0 +1,32 @@
+// file1_obf.js
+(function(){
+    const _0x1a2b = function(n){let _0x3c4d=[];for(let _0x5e6f=1;_0x5e6f<=n;_0x5e6f++){_0x3c4d.push(_0x5e6f);}return _0x3c4d;};
+    const _0x2b3c = function(arr){let _0x4d5e=0;for(let _0x6f7g of arr){_0x4d5e+=_0x6f7g;}return _0x4d5e;};
+    const _0x3c4d = function(arr){return arr.length===0?0:_0x2b3c(arr)/arr.length;};
+    const _0x4d5e = function(arr){let _0x7g8h=-Infinity;for(let _0x9i0j of arr){if(_0x9i0j>_0x7g8h){_0x7g8h=_0x9i0j;}}return _0x7g8h;};
+    const _0x5e6f = function(arr){let _0x0a1b=Infinity;for(let _0x2c3d of arr){if(_0x2c3d<_0x0a1b){_0x0a1b=_0x2c3d;}}return _0x0a1b;};
+    const _0x6f7g = function(arr){let _0x4e5f=0;for(let _0x6h7i of arr){if(_0x6h7i%2===0){_0x4e5f++;}}return _0x4e5f;};
+    const _0x7g8h = function(arr){let _0x8i9j=0;for(let _0x0j1k of arr){if(_0x0j1k%2!==0){_0x8i9j++;}}return _0x8i9j;};
+
+    const _0xrun = function(){
+        let _0xnums=_0x1a2b(100),
+            _0xsum=_0x2b3c(_0xnums),
+            _0xavg=_0x3c4d(_0xnums),
+            _0xmax=_0x4d5e(_0xnums),
+            _0xmin=_0x5e6f(_0xnums),
+            _0xeven=_0x6f7g(_0xnums),
+            _0xodd=_0x7g8h(_0xnums);
+
+        console.log("Sum:",_0xsum);
+        console.log("Average:",_0xavg);
+        console.log("Max:",_0xmax);
+        console.log("Min:",_0xmin);
+        console.log("Even count:",_0xeven);
+        console.log("Odd count:",_0xodd);
+
+        const _0xfinal=_0xsum+_0xeven+_0xodd;
+        console.log("RESULT:",_0xfinal);
+    };
+
+    _0xrun();
+})();
